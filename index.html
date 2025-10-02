@@ -27,3 +27,126 @@
 
     <main class="main-content">
         <div class="container">
+            <section id="home" class="section">
+                <h2>🌟 به مدرسه نمونه دولتی شهید احمد هاشمی خوش آمدید</h2>
+                <p>این سامانه جهت اطلاع‌رسانی به اولیای محترم و دانش‌آموزان عزیز طراحی شده است.</p>
+                
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <h3>📚 دانش‌آموزان</h3>
+                        <div class="stat-number">۳۰۰</div>
+                        <p>نفر</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>👨‍🏫 معلمان</h3>
+                        <div class="stat-number">۲۰</div>
+                        <p>نفر</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>🏫 کلاس‌ها</h3>
+                        <div class="stat-number">۹</div>
+                        <p>کلاس</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>🎓 پایه‌ها</h3>
+                        <div class="stat-number">۳</div>
+                        <p>پایه (هفتم تا نهم)</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="grades" class="section">
+                <h2>🏫 پایه‌های تحصیلی</h2>
+                
+                <div class="grades-grid">
+                    <div class="grade-card">
+                        <h3>🎒 پایه هفتم</h3>
+                        <p><strong>تعداد دانش‌آموز:</strong> ۱۰۰ نفر</p>
+                        <p><strong>تعداد کلاس:</strong> ۳ کلاس</p>
+                    </div>
+                    
+                    <div class="grade-card">
+                        <h3>📖 پایه هشتم</h3>
+                        <p><strong>تعداد دانش‌آموز:</strong> ۱۰۰ نفر</p>
+                        <p><strong>تعداد کلاس:</strong> ۳ کلاس</p>
+                    </div>
+                    
+                    <div class="grade-card">
+                        <h3>🎓 پایه نهم</h3>
+                        <p><strong>تعداد دانش‌آموز:</strong> ۱۰۰ نفر</p>
+                        <p><strong>تعداد کلاس:</strong> ۳ کلاس</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="admin" class="section">
+                <h2>⚙️ پنل مدیریت مدرسه</h2>
+                <p>از این بخش برای مدیریت محتوای سایت استفاده کنید.</p>
+                
+                <div id="loginSection" class="login-form">
+                    <h3>🔐 ورود به پنل مدیریت</h3>
+                    <input type="text" class="admin-input" placeholder="نام کاربری" id="username">
+                    <input type="password" class="admin-input" placeholder="رمز عبور" id="password">
+                    <button class="admin-btn" onclick="login()">🚪 ورود به پنل</button>
+                </div>
+                
+                <div id="adminPanel" class="admin-panel" style="display: none;">
+                    <h3>🎛️ کنترل پنل مدیریت</h3>
+                    
+                    <div class="admin-form">
+                        <h4>📢 افزودن اطلاعیه جدید</h4>
+                        <input type="text" class="admin-input" placeholder="عنوان اطلاعیه" id="announcementTitle">
+                        <textarea class="admin-input" placeholder="متن اطلاعیه" id="announcementContent" rows="3"></textarea>
+                        <select class="admin-input" id="announcementCategory">
+                            <option value="عمومی">عمومی</option>
+                            <option value="آموزشی">آموزشی</option>
+                            <option value="فرهنگی">فرهنگی</option>
+                            <option value="ورزشی">ورزشی</option>
+                        </select>
+                        <button class="admin-btn" onclick="addAnnouncement()">➕ افزودن اطلاعیه</button>
+                    </div>
+                    
+                    <div class="admin-form">
+                        <h4>📊 مدیریت محتوای موجود</h4>
+                        <button class="admin-btn" onclick="showAnnouncements()">📋 مشاهده اطلاعیه‌ها</button>
+                        <button class="admin-btn delete" onclick="clearAll()">🗑️ پاک کردن همه</button>
+                        <button class="admin-btn" onclick="logout()">🚪 خروج</button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="section">
+                <h2>📞 تماس با ما</h2>
+                <div class="contact-grid">
+                    <div>
+                        <h3>📞 تلفن</h3>
+                        <p>مدیریت: ۰۹۹۱۸۳۶۹۴۲۴</p>
+                    </div>
+                    <div>
+                        <h3>📧 ایمیل</h3>
+                        <p>shahid.hashemy.school@gmail.com</p>
+                        <p><strong>ساعات کاری:</strong> ۷:۳۰ تا ۱۲:۳۰</p>
+                    </div>
+                    <div>
+                        <h3>🏫 آدرس</h3>
+                        <p>
+                            <a href="https://maps.app.goo.gl/MZSFeoJU1VSePoWB8" target="_blank" class="map-link">
+                                📍 مشاهده روی نقشه
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© ۱۴۰۲ - کلیه حقوق برای مدرسه نمونه دولتی شهید احمد هاشمی محفوظ است</p>
+            <p>ساخته شده توسط کسری امین فر</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
